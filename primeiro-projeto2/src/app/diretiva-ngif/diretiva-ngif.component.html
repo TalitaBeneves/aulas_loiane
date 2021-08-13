@@ -1,0 +1,36 @@
+<!-- Diretivas: *ngIf -->
+<h5>*ngif</h5>
+
+<div *ngIf="cursos.length > 0">
+  Lista de Cursos Aqui.
+</div>
+<div *ngIf="cursos.length == 0">
+  Não existem cursos para serem listados
+</div>
+<!-- tag boolean -->
+<div *ngIf="mostrarCursos">
+  Lista de Cursos Aqui.
+</div>
+<div *ngIf="!mostrarCursos">
+  Não existem cursos para serem listados
+</div>
+
+<br>
+<!-- botão -->
+<button (click)="onMostrarCursos()">Mostrar ou esconder Cursos</button >
+ <br> <br>
+
+<!-- Hiddem (mostrar ou n ao usuario) -->
+
+  <h5>Hidden como alternativa</h5>
+
+  <div [hidden]="!mostrarCursos">
+    Lista de Cursos Aqui.
+  </div>
+  <div [hidden]="mostrarCursos">
+    Não existem cursos para serem listados
+  </div>
+
+<!-- para ver essa aula se quiser ir na aulça 28 da Loiane -->
+<!-- <h5>Removendo o * e usando template</h5> -->
+

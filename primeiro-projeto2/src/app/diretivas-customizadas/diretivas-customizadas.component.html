@@ -1,0 +1,23 @@
+ <!--<h1 fundoAmarelo>Texto com fundo amarelo</h1>
+
+<button fundoAmarelo></button>
+
+<p highlightMouse> texto com Highlight quando passo o mouse.</p>
+ vc retirou todas as informações do ts
+<p highlight [defaultColor]="'grey'" [highlightColor]="'pink'"> texto com Highlight com cores customizadas.</p> -->
+
+<h5>Diretiva Estrutura customizada - ngElse</h5>
+
+<div *ngIf="mostrarCursos">
+  Lista de Cursos Aqui.
+</div>
+<div *ngElse="mostrarCursos">
+  Não existem cursos para serem listados
+</div>
+
+<br>
+<!-- botão -->
+<button (click)="onMostrarCursos()">
+Mostrar ou esconder Cursos
+</button >
+ <br> <br>

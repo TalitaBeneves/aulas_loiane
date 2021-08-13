@@ -1,0 +1,162 @@
+  <!-- <section class="property-binding">
+
+  <article>
+    <h3>Interpolation / Interpolação</h3>
+    <p>String renderizada com interpolação: {{ url }}</p>
+    <p>Resultado de 1 + 1 é: {{1 + 1}}</p>
+    <p>Resultado de 1 + 1 não é: {{ 1 + 1 + getValor() }}</p>
+    <p>Curso de Angular e gosto do curso: {{ cursoAngular && getCurtirCurso()}}</p>
+  </article>
+
+  <!-- colocando imagem via url -->
+
+  <!-- <article>
+    <h3>Property Binding</h3>
+    <img src="{{ urlImagem }}">
+    <img [src]="urlImagem">
+  </article>-->
+
+  <!-- <article>
+    <h3>Class e Style Binding</h3>
+    <div>
+      Selecione uma classe:
+      <select #classe (change)="0">
+        <option value="alert-primary">1</option>
+        <option value="alert-secondary">2</option>
+        <option value="alert-success">3</option>
+        <option value="alert-danger">4</option>
+        <option value="alert-warning">5</option>
+        <option value="alert-info">6</option>
+        <option value="alert-light">7</option>
+        <option value="alert-dark">8</option>
+      </select>
+      <br><br>
+
+      <div class="alert {{ classe.value }}" role="alert">
+        Texto colorido comforme o valor do combobox.
+      </div>
+
+      <div class="alert" role="alert"
+      [class.alert-primary]="classe.value =='alert-primary'">
+        A simple primary alert—check it out!
+      </div>
+
+      <div class="alert" role="alert"
+      [class.alert-secondary]="classe.value =='alert-secondary'">
+        A simple secondary alert—check it out!
+      </div>
+
+      <div class="alert" role="alert"
+      [class.alert-success]="classe.value =='alert-success'">
+        A simpl
+        e success alert—check it out!
+      </div>
+      <div class="alert" role="alert"
+      [class.alert-danger]="classe.value =='alert-danger'">
+        A simple danger alert—check it out!
+      </div>
+
+      <div class="alert" role="alert"
+      [class.alert-warning]="classe.value =='alert-warning'">
+        A simple warning alert—check it out!
+      </div>
+
+      <div class="alert" role="alert"
+      [class.alert-info]="classe.value =='alert-info'">
+        A simple info alert—check it out!
+      </div>
+
+      <div class="alert" role="alert"
+      [class.alert-light]="classe.value =='alert-light'">
+        A simple light alert—check it out!
+      </div>
+
+      <div class="alert-dark" role="alert"
+      [style.display]="classe.value =='alert-dark' ? 'block' : 'none'">
+        Esse texto somente aparece em caso de erro.
+      </div>
+
+    </div>
+  </article>
+
+   </section> -->
+<!--<section class="event-binding">
+
+  <article>
+
+    <h3>Event Binding</h3>
+
+    <div>
+
+      <!-- <!-- criando um botão  -->
+
+    <!-- <button (click) = "botaoClicado()"
+      class="bnt bnt-primary">ME  CLIQUE!</button>
+      <br><br>-->
+
+      <!-- colocando um campo de texto -->
+
+      <!-- <input type="text"
+        (keyup)="onkeyUp($event)"
+        (keyup.enter)="salvarValor(campoInput.value)"
+        (blur)="salvarValor(campoInput.value)" #campoInput />
+
+       <p>Valor atual: {{ valorAtual }}</p>
+       <p>Valor salvo: {{ valorSalvo }}</p>
+
+       <br>
+
+      <!-- Ao passar o mouse o texto tera uma alteração -->
+
+       <!-- <span
+         (mouseover)="onMouseOverOut()"
+         (mouseout)="onMouseOverOut()"
+         [class.highlight]="isMouseOver"
+       >
+         Passe o mouse sobre mim
+       </span>
+
+    </div>
+  </article>
+   </section>-->
+
+<!-- Fazer um formulario -->
+
+<!-- <section class="Two-way-binding">
+
+  <article>
+    <h3>Two-way data binding</h3>
+    <div>
+
+      <input type="text"
+        [value]="nome" [(ngModel)] = "nome">
+
+
+      <p>Você digitou: {{ nome }}</p>
+    </div>
+      <div>
+
+        <input type="text" [(ngModel)] = "pessoa.nome">
+        <input type="text" [(ngModel)] = "pessoa.idade">
+
+        <p>Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos de idade</p>
+
+      </div>
+  </article>
+</section>-->
+<!-- Aula de input Properties-->
+<section class="input-output-properties">
+
+  <article>
+    <h3>Input/Output Properties </h3>
+
+
+    <app-curso [nome]="nomeDoCurso"></app-curso>
+
+    <contador valor="10"
+    (mudouValor)="onMudouValor($event)"
+    ></contador>
+  </article>
+ </section>
+
+

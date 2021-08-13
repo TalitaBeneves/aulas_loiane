@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "hammerjs": "^2.0.8",
+    "jquery": "^2.2.4",
+    "materialize-css": "^1.0.0"
+  },
+  "devDependencies": {
+    "jasmine": "^3.7.0"
+  }
+}
