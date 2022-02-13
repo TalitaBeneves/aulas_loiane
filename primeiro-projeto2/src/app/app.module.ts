@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { CicloComponent } from './ciclo/ciclo.component';
+
 import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { NgforComponent } from './ngfor/ngfor.component';
@@ -26,9 +27,6 @@ import { HighlightDirective } from './shared/highlight.directive';
 import { NgElseDirective } from './shared/ng-else.directive';
 import { Cursos3Component } from './cursos3/cursos3.component';
 import { CriarCursoComponent } from './criar-curso/criar-curso.component';
-
-
-
 
 
 @NgModule({

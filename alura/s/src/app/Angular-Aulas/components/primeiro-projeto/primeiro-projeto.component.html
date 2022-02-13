@@ -1,0 +1,34 @@
+
+<!-- <p>Exempço de INTERPOLAÇÃO no construtor {{link}} {{idade}}
+  {{atividades}}</p> -->
+
+<!-- <ul >
+  <li *ngFor="let atividade of atividades">
+    Atividades: {{atividades}}
+  </li>
+</ul> -->
+
+<div>
+    <p>{{texto}}</p>    <!-- INTERPOLAÇÃO -->
+   <img [src]="urlImg"> <!--Property Binding  -->
+</div>
+
+<div>
+  <select #class (change)="0">
+    <option value="alert-success">Sucesso</option>
+    <option value="alert-info">info</option>
+    <option value="alert-danger">danger</option>
+  </select>
+</div>
+<div class="alert alert-primary" role="alert">
+  A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-secondary" role="alert">
+  A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-success" role="alert">
+  A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-danger" role="alert">
+  A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
