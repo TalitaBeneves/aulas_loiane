@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class DataBindingComponent implements OnInit {
 
     url: string = 'http://loiane.training';
-    
+
 // aula do Event Binding
     onMudouValor(evento: any){
-      console.log(evento.novoValor);
+      console.log(evento.novoValor); 
     }
 
   constructor() { }
@@ -34,7 +34,7 @@ export class DataBindingComponent implements OnInit {
   }
 
   nomeDoCurso: string = 'Angular';
-// caso a gente queria deixar esse valor inicial pe;o data binding é só colocar na binding html []"valorInicial"
+// caso a gente queria deixar esse valor inicial pelo data binding é só colocar na binding html []"valorInicial"
 
   // valorInicial = 15;
 
@@ -58,7 +58,7 @@ export class DataBindingComponent implements OnInit {
 
   onkeyUp(evento: KeyboardEvent){
     this.valorAtual = (<HTMLInputElement> evento.target).value;
-
+    console.log(evento)
   }
   salvarValor(valor: any){
     this.valorSalvo = valor;

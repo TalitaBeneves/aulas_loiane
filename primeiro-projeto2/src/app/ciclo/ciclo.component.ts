@@ -5,52 +5,52 @@ import { AfterContentChecked,OnChanges, DoCheck,AfterContentInit, AfterViewCheck
   templateUrl: './ciclo.component.html',
   styleUrls: ['./ciclo.component.css']
 })
-export class CicloComponent implements OnChanges, OnInit,DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
-
+export class CicloComponent  {
+  // OnChanges, OnInit,DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy
   @Input() valorInicial: number = 10;
 
-  constructor() {
-    this.log('contructor');
-  }
+  // constructor() {
+  //   this.log('contructor');
+  // }
 
-  ngAfterViewInit(): void {
-    this.log('ngAfterViewInit');
-  }
+  // ngAfterViewInit(): void {
+  //   this.log('ngAfterViewInit');
+  // }
 
-  ngAfterViewChecked(): void {
-    this.log('ngAfterViewChecked');
-  }
+  // ngAfterViewChecked(): void {
+  //   this.log('ngAfterViewChecked');
+  // }
 
-  ngAfterContentChecked(): void {
-    this.log('ngAfterContentChecked');
-  }
+  // ngAfterContentChecked(): void {
+  //   this.log('ngAfterContentChecked');
+  // }
 
 
-  ngOnChanges(){
-    this.log('ngOnChange');
-  }
+  // ngOnChanges(){
+  //   this.log('ngOnChange');
+  // }
 
-  ngOnInit(){
-    this.log('ngOnInit');
-  }
+  // ngOnInit(){
+  //   this.log('ngOnInit');
+  // }
 
-  ngDoCheck(){
-    this.log('ngDoCheck');
-  }
+  // ngDoCheck(){
+  //   this.log('ngDoCheck');
+  // }
 
-  ngAfterContentInit() {
-    this.log('ngAfterContentInit');
-  }
+  // ngAfterContentInit() {
+  //   this.log('ngAfterContentInit');
+  // }
 
-  ngAfterViewCheched(){
-    this.log('ngAfterViewCheched');
-  }
+  // ngAfterViewCheched(){
+  //   this.log('ngAfterViewCheched');
+  // }
 
-  ngOnDestroy(){
-    this.log('ngOnDestroy');
-  }
+  // ngOnDestroy(){
+  //   this.log('ngOnDestroy');
+  // }
 
-  private log(hook: string){
-  console.log(hook);
-  }
+  // private log(hook: string){
+  // console.log(hook);
+  // }
 }
