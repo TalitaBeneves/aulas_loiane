@@ -7,14 +7,17 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link " aria-current="page" [class.active]="aba == 'home'" (click)="aba = 'home'">Home</a>
+        <a class="nav-link " routerLink="/info" aria-current="page" [class.active]="aba == 'home'" (click)="aba = 'home'">Home</a>
+
         <a class="nav-link" [class.active]="aba == 'Features'"  (click)="aba = 'Features'">Features</a>
         <a class="nav-link" [class.active]="aba == 'Pricing'" (click)="aba = 'Pricing'" >Pricing</a>
       </div>
     </div>
   </div>
 </nav>
+
 <div class="container" [ngSwitch]="aba" >
-<p *ngSwitchCase="'Features'">Modo Features ativado</p>
-<p *ngSwitchCase="'Pricing'">Modo Pricing ativado</p>
-<p *ngSwitchDefault>Modo Home ativado</p>
+  <p *ngSwitchCase="'Features'">Modo Features ativado</p>
+  <p *ngSwitchCase="'Pricing'">Modo Pricing ativado</p>
+  <p *ngSwitchDefault>Modo Home ativado</p>
 </div>

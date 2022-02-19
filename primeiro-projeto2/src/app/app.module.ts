@@ -27,6 +27,8 @@ import { HighlightDirective } from './shared/highlight.directive';
 import { NgElseDirective } from './shared/ng-else.directive';
 import { Cursos3Component } from './cursos3/cursos3.component';
 import { CriarCursoComponent } from './criar-curso/criar-curso.component';
+import { InfosComponent } from './infos/infos/infos.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 
 @NgModule({
@@ -50,7 +52,9 @@ import { CriarCursoComponent } from './criar-curso/criar-curso.component';
     HighlightDirective,
     NgElseDirective,
     Cursos3Component,
-    CriarCursoComponent
+    CriarCursoComponent,
+    InfosComponent,
+    NavBarComponent
 
 
   ],

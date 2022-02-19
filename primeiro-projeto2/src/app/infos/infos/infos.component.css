@@ -1,0 +1,13 @@
+h6, p{
+  width: 50%;
+}
+
+hr{
+  width: 100%;
+  height: 1px;
+  background: aqua;
+}
+
+code{
+  background-color: black;
+}
