@@ -1,25 +1,30 @@
-<br><br>
-<h5>Style com property binding (style binding)</h5> <br>
+<h5>Style com property binding (style binding)</h5>
+<br />
 <button
-[style.backgroundColor]="ativo ? 'green' : 'gray'"
-[style.color]="ativo ? 'white' : 'black'"
-[style.fonteWeight]="ativo ? 'bold' : 'normal'"
-[style.fontSize]="tamanhoFonte + 'px'"
-(click)="mudarAtivo()"
+  class="btn"
+  [style.backgroundColor]="ativo ? 'green' : 'pink'"
+  [style.color]="ativo ? 'white' : 'black'"
+  [style.fonteWeight]="ativo ? 'bold' : 'normal'"
+  [style.fontSize]="tamanhoFonte + 'px'"
+  [style.width]="tamanho + 'px'"
+  (click)="mudarAtivo()"
 >
-Mudar atributo 'ativo'
+  Mudar atributo 'ativo'
 </button>
-<br>
-<input type="text" [(ngModel)]="tamanhoFonte">
+<br /><br />
+<input type="text" [(ngModel)]="tamanhoFonte" />
+<br /><br />
 
 <h5>Style com diretiva ngStyle</h5>
 <button
+  class="btn"
   [ngStyle]="{
-    'backgroundColor': (ativo ? 'green' : 'gray'),
-    'color': (ativo ? 'white' : 'black'),
-    'fonteWeight':(ativo ? 'bold' : 'normal'),
-    'fontSize':(tamanhoFonte + 'px')
-    }"
-    (click)="mudarAtivo()"
->Mudar atributo 'ativo'</button>
-
+    backgroundColor: ativo ? 'green' : 'pink',
+    color: ativo ? 'white' : 'black',
+    fonteWeight: ativo ? 'bold' : 'normal',
+    fontSize: tamanhoFonte + 'px'
+  }"
+  (click)="mudarAtivo()"
+>
+  Mudar atributo 'ativo'
+</button>

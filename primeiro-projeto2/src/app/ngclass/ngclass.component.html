@@ -1,11 +1,21 @@
-
-
-<h1>
-  <i class="caret"
-  [ngClass]="{
-    'caret-right': '!myFavorite',
-     'rcaret-right-fill': 'myFavoite'
-  }"
-  (click)="onClickMyFavorite()"
+<h3>Property Binding</h3>
+<h2>
+  <i
+    class="glyphicon"
+    [class.glyphicon-star-empty]="!myFavorite"
+    [class.glyphicon-star]="myFavorite"
+    (click)="onClickMyFavorite()"
   ></i>
-</h1>
+</h2>
+
+<h3>ngClass</h3>
+<h2>
+  <i
+    class="glyphicon"
+    [ngClass]="{
+      'glyphicon-star-empty': !myFavorite,
+      'glyphicon-star': myFavorite
+    }"
+    (click)="onClickMyFavorite()"
+  ></i>
+</h2>

@@ -1,5 +1,6 @@
 <!-- Diretivas: *ngIf -->
 <h5>*ngif</h5>
+<strong>O ngif é recomendado para árvores de elementos grandes, como por exemplo uma mensagem de formulario </strong>
 
 <div *ngIf="cursos.length > 0">
   Lista de Cursos Aqui.
@@ -17,12 +18,13 @@
 
 <br>
 <!-- botão -->
-<button (click)="onMostrarCursos()">Mostrar ou esconder Cursos</button >
+<button (click)="onMostrarCursos()" class="btn-primary">Mostrar ou esconder Cursos</button >
  <br> <br>
 
 <!-- Hiddem (mostrar ou n ao usuario) -->
 
   <h5>Hidden como alternativa</h5>
+  <strong>O hidden é recomendado para árvores de elementos pequenos, como por exemplo uma mensagem de formulário </strong>
 
   <div [hidden]="!mostrarCursos">
     Lista de Cursos Aqui.
@@ -31,6 +33,6 @@
     Não existem cursos para serem listados
   </div>
 
-<!-- para ver essa aula se quiser ir na aulça 28 da Loiane -->
+<!-- para ver essa aula se quiser ir na aula 28 da Loiane -->
 <!-- <h5>Removendo o * e usando template</h5> -->
 

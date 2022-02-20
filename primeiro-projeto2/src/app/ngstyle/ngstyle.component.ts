@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class NgstyleComponent implements OnInit {
 
   ativo: boolean = false;
-  tamanhoFonte: number = 20;
+  tamanhoFonte: number = 12;
+  tamanho: number = 130;
 
   constructor() { }
 
